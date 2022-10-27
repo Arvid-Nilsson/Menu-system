@@ -1,3 +1,4 @@
+#laget! minigame
 def laget():
     names = []
     def teamsPicker(i):
@@ -32,3 +33,38 @@ def laget():
             print(" ", x, end='')
         print(" ")
         
+#Pappegojan polly minigame
+def polly():
+    from encodings import utf_8
+    import random
+    chr = utf_8
+    seads = ""
+    preference = ""
+    
+    while True:
+        try:
+            temperature = float(input("Hur varmt är det idag? "))
+        except:
+            print("Skriv endast tal tack")
+        else:
+            break
+
+    weather = input("Vad är det för väder idag ").lower()
+    while "inte" in weather:
+        weather = input("Skriv inte \u0022inte\u0022 \nVad är det för väder idag ").lower()
+
+    if temperature < 0 or "snö" in weather:
+        seads = str(random.randint(1, 25)) + " frön"
+    elif temperature > 20 and "sol" in weather:
+        seads = "5 frön"
+        preference = "en rolig historia"
+    elif temperature < 20 and not("regn" in weather):
+        seads = "10 frön"
+        preference = "och en sång om livet på havet"
+    elif temperature == 20 or "blås" in weather:
+        seads = "\b\b\binte äta"
+        preference = "men hen vill att du skal sätta på radion"
+    else:
+        seads = "\b\b\binte uppleva detta vädret"
+
+    print(f"polly vill ha {seads} {preference} \u2665")
