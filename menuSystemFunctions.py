@@ -35,9 +35,7 @@ def laget():
         
 #Pappegojan polly minigamegit
 def polly():
-    from encodings import utf_8
     import random
-    chr = utf_8
     seads = ""
     preference = ""
     

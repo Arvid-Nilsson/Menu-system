@@ -4,7 +4,7 @@ loopActive = True
 
 def playAgain():
     global loopActive
-    playAgain = input("Do you want to go back to menu? (y/n) ")
+    playAgain = input("\nDo you want to go back to menu? (y/n) ")
     if "y" in playAgain:
         pass
     else:
@@ -23,13 +23,13 @@ skriv 5 för att avsluta programmet
         ms.laget()
         playAgain()
     elif answer == 2:
-        ms.polly
+        ms.polly()
         playAgain()
     elif answer == 3:
-        ms.harryPotter
+        ms.harryPotter()
         playAgain()
     elif answer == 4:
-        ms.alien
+        ms.alien()
         playAgain()
     elif answer == 5:
         break
