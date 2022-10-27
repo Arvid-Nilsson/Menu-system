@@ -1,1 +1,1 @@
-# Menu-system
+Play by running menuSystem.py
