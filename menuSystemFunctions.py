@@ -33,6 +33,7 @@ def laget():
             print(" ", x, end='')
         print(" ")
         
+
 #Pappegojan polly minigamegit
 def polly():
     import random
@@ -66,6 +67,7 @@ def polly():
         seads = "\b\b\binte uppleva detta vädret"
 
     print(f"polly vill ha {seads} {preference} \u2665")
+
 
 #Harry potter house mini game
 def harryPotter():
@@ -104,6 +106,7 @@ def harryPotter():
     else: 
         house += random.choice(randomHouse)
         print(f"Ditt elevhem är {house} \nGrattis!")
+
 
 #Alien minigame
 def alien():
